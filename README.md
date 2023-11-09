@@ -28,7 +28,7 @@ Important Predefined methods or Robot Classes are as follows.
 - mouseMove(), mousePress(), mouseWheel() and mouseRelease() to simulate mouse actions. 
 - createScreenCapture() to capture screenshots which can be saved as a file. 
 
-## 🔗 Using KeyPress() and KeyRelease() to control Keyboard through Selenium
+## 🔗 Using KeyPress() and KeyRelease() to control Keyboard
 
 The basic syntax for the KeyPress() and KeyRelease() methods is 
 
@@ -76,7 +76,7 @@ Use the Robot Class to Hit the Enter key and then release the key after it has b
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 
-## 🔗 Using mousePress() and mouseRelease() to Click using mouse in Selenium on a webpage
+## 🔗 Using mousePress() and mouseRelease() to Click on a webpage
 The basic syntax for using the mousePress() method. 	
 		
 	.mousePress(InputEvent.{event});
@@ -86,7 +86,7 @@ The ```{event}``` can take several values such as.
 ```BUTTON1_DOWN_MASK``` for left Click
 ```BUTTON2_DOWN_MASK``` for right Click
 
-## 🔗 Using mouseWheel() to scroll in a page using Selenium 
+## 🔗 Using mouseWheel() to scroll on a webpage  
 
 The mouseWheel() syntax will be used to scroll in a webpage. This method takes some value, and that value is referred to as the Wheel Amount. The positive wheel amount indicates that the mouse will scroll downwards, however, the negative Wheel Amount will indicate that the mouse will scroll upwards. 
 
