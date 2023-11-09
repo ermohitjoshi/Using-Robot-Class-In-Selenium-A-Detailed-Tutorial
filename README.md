@@ -43,11 +43,11 @@ The basic syntax for the KeyPress() and KeyRelease() methods is
 | Enter Key |  `.keyPress(KeyEvent.VK_ENTER);`  |
 | Control Key   |`.keyPress(KeyEvent.VK_CONTROL);` |
 
-While writing the syntax the IDE will display the list of possible syntax for using any key itself. 
+While writing the syntax the IDE will display the list of possible options. 
 
-<img width="444" alt="1" src="https://github.com/ermohitjoshi/robots-class-in-selenium/assets/87078547/eddb0416-cb8e-4f10-9006-f175728c44a9">
+<img width="444" alt="1" src="https://github.com/ermohitjoshi/Using-Robot-Class-In-Selenium-A-Detailed-Tutorial/assets/87078547/6c5e0503-6a49-414c-b2e2-b95942c1f897">
 
-With the help of Selenium let's automate a task. We will navigate to an e-commerce application in our browser, search for a product and hit the enter key. 
+Let's automate a task using Selenium. It will navigate to an e-commerce application in our browser, search for a product and hit the enter key. 
 
 Let's understand how we can do it with the help of Robot Class in Selenium. 
 
@@ -107,7 +107,7 @@ For example, consider the following code. The value '30' depicts first it will s
     
 An alternative option in the above script for the ```Thread.Sleep()``` method in Robot class is to use the **```robot.delay()```**
 
-## 🔗 Using mouseMove() to hover the mouse using Selenium on a webpage
+## 🔗 Using mouseMove() to hover the mouse on a webpage
 
 The basic syntax for the method is
 	
@@ -122,23 +122,23 @@ To take a Screenshot on any screen, first initialise a rectangle class in Seleni
 
 The syntax for the Rectangle class is as follows. 
 
-	Rectangle(int x-coordinate, int y-coordinate, int height, int width)
+	Rectangle(int x-coordinate, int y-coordinate, int height, int width);
 
 or 
 
-	Rectangle(Point p, Dimension d)
+	Rectangle(Point p, Dimension d);
 
 Then use the Buffered Image class to manipulate the captured screenshot data. 
 
-	BufferedImage capturedScreenshot = robot.createScreenCapture(rec
+	BufferedImage capturedScreenshot = robot.createScreenCapture(rec);
 
 Then mark the destination for the screenshot to be stored. 
 
-	File destination = new File("C:\\Users\\eclipse-workspace\\seleniumrobot\\Screenshots
+	File destination = new File("C:\\Users\\eclipse-workspace\\seleniumrobot\\Screenshots");
 
 And finally use Java's ImageIO class 
 
-	ImageIO.write(capturedScreenshot, "png", destination
+	ImageIO.write(capturedScreenshot, "png", destination);
 
 ## 🔗 Uploading and Downloading using Robot Class in Selenium 
 
