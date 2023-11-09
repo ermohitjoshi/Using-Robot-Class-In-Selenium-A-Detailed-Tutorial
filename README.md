@@ -9,8 +9,9 @@
 ```bash
 java --version
 ```
+<img width="527" alt="2" src="https://github.com/ermohitjoshi/Using-Robot-Class-In-Selenium-A-Detailed-Tutorial/assets/87078547/d3b50404-4eb5-4725-bf73-1ce9eadac5cf">
 
-- Downoad [Selenium WebDriver](https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.15.0/selenium-java-4.15.0.zip) Language Bindings for Java. 
+- Dowlnoad [Selenium WebDriver](https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.15.0/selenium-java-4.15.0.zip) Language Bindings for Java. 
 
 - Browser Driver for the browser you're performing the testing upon. 
 
@@ -20,7 +21,7 @@ java --version
 - Right-click on Project from Package Explorer **->** Click on Build Path **->** Configure Build Path **->** Java Build Path **->** Click on Class Module **->** Click on Add External JARs **->** Select all the JARs file you have downloaded from the Selenium WebDriver Language Bindings. Now Selenium is successfully configured in your Java Project. 
 
 ## 🔗 Using Selenium Robot Classes
-There are several predefined methods known as Robot class in Selenium that help in Simulating keyboard and mouse events on the screen. The purpose is to interact with native OS Windows, popups, and native applications of your machines. 
+There are several predefined methods known as Robot class in Selenium that help in simulating keyboard and mouse events on the screen. The purpose is to interact with native OS Windows, popups, and native applications of your machines. 
 
 Important Predefined methods or Robot Classes are as follows. 
 
@@ -80,6 +81,8 @@ Use the Robot Class to Hit the Enter key and then release the key after it has b
 The basic syntax for using the mousePress() method. 	
 		
 	.mousePress(InputEvent.{event});
+
+After using the ```mousePress()``` method, ```mouseRelease()``` is used to release the key that is pressed. 
 
 The ```{event}``` can take several values such as. 
 
