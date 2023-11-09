@@ -150,7 +150,7 @@ Launch the URL where you want to upload the file.
 
 Initialize the path where the file is stored on the system to a string format. 
 
-	StringSelection file = new StringSelection "C:\\Users\\mohit\\OneDrive\\Desktop\\demofile.jpg");
+	StringSelection file = new StringSelection "C:\\Users\\OneDrive\\Desktop\\demofile.jpg");
 
 Copy the file path to the clipboard of the operating system 
 
@@ -181,5 +181,5 @@ Pressing the enter key to select the file and ultimately upload the file.
 
 An alternate way of doing it without using the Robot Class 
 
-	uploadButton.sendKeys("C:\\Users\\OneDrive\\\\Desktop\\\\demofile.jpg");
+	uploadButton.sendKeys("C:\\Users\\OneDrive\\Desktop\\demofile.jpg");
 
