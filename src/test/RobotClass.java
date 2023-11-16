@@ -13,8 +13,8 @@ import org.testng.annotations.*;
 public class RobotClass {
 	
 	 public RemoteWebDriver driver = null;
-	 String username = "mohitjoshihere";
-	 String accessKey = "NLdReivpECj38YMFFSP13fhjPsaAsPPt28YYeUg2HdnfNu9KRB";
+	 String username = "";
+	 String accessKey = "";
 
 	 @BeforeSuite
 	 public void setUp() {
