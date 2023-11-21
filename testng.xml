@@ -4,7 +4,6 @@
   <test name="Test">
 	    <classes>
 <class name="test.RobotClass"></class>
-<class name="test.NewTest"></class>
 </classes>
 
   </test> <!-- Test -->
