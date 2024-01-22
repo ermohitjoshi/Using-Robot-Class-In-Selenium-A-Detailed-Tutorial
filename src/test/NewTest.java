@@ -2,7 +2,6 @@ package test;
 import java.awt.AWTException;
 import java.awt.HeadlessException;
 import java.awt.Rectangle;
-
 import org.openqa.selenium.Point;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -12,9 +11,7 @@ import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
