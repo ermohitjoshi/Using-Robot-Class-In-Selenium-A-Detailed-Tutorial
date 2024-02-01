@@ -15,7 +15,6 @@ import javax.imageio.ImageIO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
@@ -24,32 +23,24 @@ import org.openqa.selenium.WebElement;
 
  
 class NewTest {
-    WebDriver driver;
+	WebDriver driver = new ChromeDriver();
     Robot robot;
-    Actions actions;
 	int xcord;
 	int ycord;
-    
+	
     @BeforeTest
     void setup() throws AWTException {
-    	
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mohit\\eclipse-workspace\\usingSeleniumRobotClass\\drivers\\chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.setBinary("C:\\Users\\mohit\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
-		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
-		robot = new Robot();
-		actions = new Actions(driver);
+    	robot = new Robot();	
     }
     
     // Using Keyboard Keys
 	 @Test(priority = 0)
-	 public void pressingKeyboardKeys() throws AWTException {
+	 public void pressingKeyboardKeys() throws AWTException, InterruptedException {
 		 driver.get("https://ecommerce-playground.lambdatest.io/");
 		 driver.findElement(By.name("search")).sendKeys("iphone");
-		 System.setProperty("java.awt.headless", "true");
 		 robot.keyPress(KeyEvent.VK_ENTER);
 		 robot.keyRelease(KeyEvent.VK_ENTER);
+		 Thread.sleep(2000);
 		 robot.delay(2000);
 	 }
 	 
@@ -58,7 +49,6 @@ class NewTest {
 	 public void scrollingPage() throws AWTException, InterruptedException {
 		 driver.get("https://ecommerce-playground.lambdatest.io/");
 		 Thread.sleep(2000);
-		 
 		 robot.mouseWheel(30);
 		 robot.delay(2000);
 		 robot.mouseWheel(-8);
@@ -115,14 +105,10 @@ class NewTest {
 			StringSelection file = new StringSelection("C:\\Users\\mohit\\OneDrive\\Desktop\\demofile.png");
 			
 			// Copying the path to the clipboard 
-			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(file,null); 		
-			
-			// Initializing the Upload button 
-			WebElement uploadButton = driver.findElement(By.id("file"));		
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(file,null); 				
 
 			// Clicking on the Upload Button 
-			actions.moveToElement(uploadButton).click().perform();	
-			robot.delay(2000);
+			driver.findElement(By.id("file")).click();
 		    
 			// Pressing the CTRL + V command 
 		    robot.keyPress(KeyEvent.VK_CONTROL);
