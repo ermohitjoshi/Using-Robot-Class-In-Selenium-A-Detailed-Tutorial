@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-	    <classes>
-<class name="test.RobotClass"></class>
-</classes>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Using Robot Class in Selenium" parallel="tests" thread-count="4">
 
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Robot Class On Selenium Cloud Grid" enabled="true">
+		<parameter name="browser" value="remote-chrome"/> 
+		<parameter name="testurl" value="https://the-internet.herokuapp.com/basic_auth"/> 
+        <classes>
+		 <class name="RobotCloudGrid">
+                <methods>
+                    <include name="sign_in_demo"/>
+                </methods>
+         </class> 
+        </classes>
+    </test>
+
+    <test name="Robot Class On Selenium Local Grid" enabled="true">
+		<parameter name="browser" value="chrome"/>
+        <classes>
+			<class name="RobotLocalGrid">
+                <methods>
+                    <include name="pressing_keyboard_keys"/>
+                    <include name="scrollingPage"/>
+                    <include name="pressMouseKeys"/>
+                    <include name="downloadFile"/>
+                    <include name="uploadFile"/>
+                    <include name="takingScreenshot"/>
+                </methods>
+            </class>
+        </classes>
+    </test> 
+</suite>
