@@ -74,7 +74,7 @@ public class RobotLocalGrid extends BaseTest {
 		 robot.delay(2000);
     }
 
-	 @Test(priority = 3, description = "Test 3: Using Mouse Keys")
+	 @Test(priority = 3, description = "Test 3: Using Mouse Keys", enabled=true)
 	 public void pressMouseKeys() {
 		 WebDriver driver = getDriver();
 		 driver.get("https://www.lambdatest.com/selenium-playground/checkbox-demo");
@@ -87,7 +87,7 @@ public class RobotLocalGrid extends BaseTest {
 		 robot.delay(2000);
 	 }
     
-	 @Test(priority = 4, description = "Test 4: Downloading a File")
+	 @Test(priority = 4, description = "Test 4: Downloading a File", enabled=true)
 	 public void downloadFile() throws AWTException {
 		 WebDriver driver = getDriver();
 		 driver.get("https://www.lambdatest.com/selenium-playground/download-file-demo");
@@ -98,7 +98,7 @@ public class RobotLocalGrid extends BaseTest {
 		 robot.keyRelease(KeyEvent.VK_ENTER);
 	 }
 	 
-	 @Test(priority =5, description = "Test 5: Uploading a File")
+	 @Test(priority =5, description = "Test 5: Uploading a File", enabled=true)
 	 public void uploadFile() throws AWTException{
 		 WebDriver driver = getDriver();
 		 driver.get("https://www.lambdatest.com/selenium-playground/upload-file-demo");	 
@@ -133,7 +133,7 @@ public class RobotLocalGrid extends BaseTest {
 //			uploadButton.sendKeys("C:\\\\Users\\\\mohit\\\\OneDrive\\\\Desktop\\\\demofile.jpg");
 	 }
 	 
-	 @Test (priority = 6, description = "Test 5: Taking a Screenshot")
+	 @Test (priority = 6, description = "Test 5: Taking a Screenshot", enabled=true)
 	 public void takingScreenshot() throws IOException, HeadlessException, AWTException {
 		 WebDriver driver = getDriver();
 		 driver.get("https://www.lambdatest.com/selenium-playground/virtual-dom");	
