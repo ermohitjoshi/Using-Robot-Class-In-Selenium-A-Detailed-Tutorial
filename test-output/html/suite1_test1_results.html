@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Robot Class On Selenium Cloud Grid</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Robot Class On Selenium Cloud Grid</h1>
+<p>
+  Test duration: 0.973s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">RobotCloudGrid</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  setupTest
+      </td>
+  <td class="duration">
+    0.971s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"remote-chrome"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. <br/>
+Host info: host: &apos;MOHIT&apos;, ip: &apos;169.254.121.185&apos;<br/>
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;<br/>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver<br/>
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {ACCEPT_INSECURE_CERTS: false, ACCEPT_SSL_CERTS: false, accessKey: NLdReivpECj38YMFFSP13fhjPsa..., autoHeal: false, build: [Build] Demo: Robot Class o..., name: Demo: Robot Class on Lambda..., plugin: java-testNG, project: [Project] Robot Class on La..., resolution: 2560x1440, tunnel: false, username: mohitjoshihere, w3c: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]<br/>
+Capabilities {LT:Options: {ACCEPT_INSECURE_CERTS: false, ACCEPT_SSL_CERTS: false, accessKey: NLdReivpECj38YMFFSP13fhjPsa..., autoHeal: false, build: [Build] Demo: Robot Class o..., name: Demo: Robot Class on Lambda..., plugin: java-testNG, project: [Project] Robot Class on La..., resolution: 2560x1440, tunnel: false, username: mohitjoshihere, w3c: true}, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:537)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)<br />
+              setup.DriverManager.setupRemoteChromeDriver(DriverManager.java:103)<br />
+              setup.DriverManager.createDriver(DriverManager.java:47)<br />
+              BaseTest.setupTest(BaseTest.java:13)<br />
+              java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br />
+              org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)<br />
+              org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
+              org.testng.TestRunner.run(TestRunner.java:601)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)<br />
+              org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)<br />
+              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+              java.base/java.lang.Thread.run(Thread.java:1589)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.io.UncheckedIOException: java.net.ConnectException</a><br />
+        <div class="stackTrace" id="exception-1">
+                      org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:443)<br />
+                      org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)<br />
+                      org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)<br />
+                      org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)<br />
+                      org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)<br />
+                      org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)<br />
+                      org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)<br />
+                      org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)<br />
+                      org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)<br />
+                      setup.DriverManager.setupRemoteChromeDriver(DriverManager.java:103)<br />
+                      setup.DriverManager.createDriver(DriverManager.java:47)<br />
+                      BaseTest.setupTest(BaseTest.java:13)<br />
+                      java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br />
+                      java.base/java.lang.reflect.Method.invoke(Method.java:578)<br />
+                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+                      org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)<br />
+                      org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)<br />
+                      org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)<br />
+                      org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)<br />
+                      org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)<br />
+                      java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:806)<br />
+                      org.testng.TestRunner.run(TestRunner.java:601)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br />
+                      org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)<br />
+                      org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+                      java.base/java.lang.Thread.run(Thread.java:1589)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">java.net.ConnectException</a><br />
+        <div class="stackTrace" id="exception-2">
+                      java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1045)<br />
+                      java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:224)<br />
+                      java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)<br />
+                      java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:380)<br />
+                      java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:128)<br />
+                      java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:368)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:500)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:405)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:397)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:409)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:450)<br />
+                      java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)<br />
+                      java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)<br />
+                      java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:440)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:342)<br />
+                      java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)<br />
+                      java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)<br />
+                      java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+                      java.base/java.lang.Thread.run(Thread.java:1589)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">java.nio.channels.UnresolvedAddressException</a><br />
+        <div class="stackTrace" id="exception-3">
+                      java.base/sun.nio.ch.Net.checkAddress(Net.java:149)<br />
+                      java.base/sun.nio.ch.Net.checkAddress(Net.java:157)<br />
+                      java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:842)<br />
+                      java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:865)<br />
+                      java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:208)<br />
+                      java.base/java.security.AccessController.doPrivileged(AccessController.java:569)<br />
+                      java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:210)<br />
+                      java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)<br />
+                      java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:380)<br />
+                      java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:128)<br />
+                      java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:94)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:368)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:500)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:405)<br />
+                      java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:397)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:409)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:450)<br />
+                      java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)<br />
+                      java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)<br />
+                      java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2372)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:440)<br />
+                      java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:342)<br />
+                      java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)<br />
+                      java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)<br />
+                      java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)<br />
+                      java.base/java.lang.Thread.run(Thread.java:1589)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">RobotCloudGrid</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  navigateToWebsite
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
+
+
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">RobotCloudGrid</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="Test 1: Sign in In Demo Website">sign_in_demo</span>
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  
+</body>
+</html>

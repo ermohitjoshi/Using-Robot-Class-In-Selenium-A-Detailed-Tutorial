@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Robot Class On Selenium Local Grid"
+           tests="7"
+           failures="7"
+           errors="0"
+           skipped="0"
+           time="7.719">
+  <properties />
+            <testcase name="tearDown" time="0.009" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, executeScript {script=lambda-status=passed, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, executeScript {script=lambda-status=passed, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:464)
+  setup.DriverManager.quitDriver(DriverManager.java:36)
+  BaseTest.tearDown(BaseTest.java:19)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+  org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="pressing_keyboard_keys" time="7.641" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, findElement {using=name, value=search}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, findElement {using=name, value=search}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+  org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+  RobotLocalGrid.pressing_keyboard_keys(RobotLocalGrid.java:62)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="scrollingPage" time="0.008" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://ecommerce-playground.lambdatest.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://ecommerce-playground.lambdatest.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+  RobotLocalGrid.scrollingPage(RobotLocalGrid.java:70)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="downloadFile" time="0.007" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/download-file-demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/download-file-demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+  RobotLocalGrid.downloadFile(RobotLocalGrid.java:94)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="takingScreenshot" time="0.018" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/virtual-dom}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/virtual-dom}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+  RobotLocalGrid.takingScreenshot(RobotLocalGrid.java:140)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="uploadFile" time="0.008" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/upload-file-demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/upload-file-demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+  RobotLocalGrid.uploadFile(RobotLocalGrid.java:105)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="pressMouseKeys" time="0.028" classname="RobotLocalGrid">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/checkbox-demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f"
+              >
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13b9a5eab38074fcdec13e3280181e5f, get {url=https://www.lambdatest.com/selenium-playground/checkbox-demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49692/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b9a5eab38074fcdec13e3280181e5f
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+  RobotLocalGrid.pressMouseKeys(RobotLocalGrid.java:81)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:578)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:806)
+  org.testng.TestRunner.run(TestRunner.java:601)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+  org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+  java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
