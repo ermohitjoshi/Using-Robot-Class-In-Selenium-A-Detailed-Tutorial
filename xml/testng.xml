@@ -21,6 +21,11 @@
 
     <test name="Robot Class On Selenium Local Grid" enabled="true">
 		<parameter name="browser" value="chrome"/>
+		<parameter name="testurl1" value="https://ecommerce-playground.lambdatest.io/"/> 
+		<parameter name="testurl2" value="https://www.lambdatest.com/selenium-playground/checkbox-demo"/> 
+		<parameter name="testurl3" value="https://www.lambdatest.com/selenium-playground/download-file-demo"/> 
+		<parameter name="testurl4" value="https://www.lambdatest.com/selenium-playground/upload-file-demo"/> 
+		<parameter name="testurl5" value="https://www.lambdatest.com/selenium-playground/virtual-dom"/> 
         <classes>
 			<class name="RobotLocalGrid">
                 <methods>
