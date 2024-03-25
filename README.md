@@ -18,9 +18,40 @@ java --version
 ## 🔗 Setup 
 
 - Launch a workspace in Eclipse IDE and create a Java Project. 
-- Right-click on Project from Package Explorer **->** Click on Build Path **->** Configure Build Path **->** Java Build Path **->** Click on Class Module **->** Click on Add External JARs **->** Select all the JARs file you have downloaded from the Selenium WebDriver Language Bindings. Now Selenium is successfully configured in your Java Project. 
+- Right-click on Project from Package Explorer **->** Click on Build Path **->** Configure Build Path **->** Java Build Path **->** Click on Class Module **->** Click on Add External JARs **->** Select all the JARs file you have downloaded from the Selenium WebDriver Language Bindings. Now Selenium is successfully configured in your Java Project.
 
-## 🔗 Using Selenium Robot Classes
+## 🔗 Using Selenium Robot Classes on LambdaTest Cloud Grid
+
+```java
+driver.get("https://the-internet.herokuapp.com/basic_auth");
+Thread.sleep(10000);
+
+// Put the value of username against admin
+driver.executeScript("lambda-set-clipboard:admin");
+
+driver.executeScript("lambda-perform-keyboard-events:^v");
+Thread.sleep(2000);
+
+//TAB to switch cursor from username to password
+driver.executeScript("lambda-perform-keyboard-events:{TAB}");
+
+// Put the password value against the admin.
+driver.executeScript("lambda-set-clipboard:admin");
+Thread.sleep(2000);
+
+driver.executeScript("lambda-perform-keyboard-events:^v");
+Thread.sleep(2000);
+
+// Press sign in
+driver.executeScript("lambda-perform-keyboard-events:{ENTER}");
+```
+
+Here are the Key Options (or Key Code):
+
+Super Keys: COMMAND, CTRL, SHIFT    
+Normal Keys: “A”: “S”: “D”: “F”: “H”: “G”: “Z”: “X”: “C”: “V”: “B”: “Q”: “W”: “E”: “R”: “Y”: “T”: “1": “2”: “3":  “4”: “6": “5”: “9": “7”: “8": “0”:  “O”:  “U”:  “I”:  “P”: “TAB”: “SPACE”: “DELETE”: “ESC”: “Option”
+ 
+## 🔗 Using Selenium Robot Classes on Local Grid 
 There are several predefined methods known as Robot class in Selenium that help in simulating keyboard and mouse events on the screen. The purpose is to interact with native OS Windows, popups, and native applications of your machines. 
 
 Important Predefined methods or Robot Classes are as follows. 
