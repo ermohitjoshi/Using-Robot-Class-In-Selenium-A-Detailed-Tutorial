@@ -80,8 +80,8 @@ public class DriverManager
         final HashMap<String, Object> ltOptions = new HashMap<String, Object>();
 
         browserOptions.setPlatformName ("Windows 11");
-        ltOptions.put("username", "mohitjoshihere");
-        ltOptions.put("accessKey", "NLdReivpECj38YMFFSP13fhjPsaAsPPt28YYeUg2HdnfNu9KRB");
+        ltOptions.put("username", "");
+        ltOptions.put("accessKey", "");
         /* ltOptions.put ("selenium_version", "3.141.0"); */
         ltOptions.put ("resolution", "2560x1440");
         ltOptions.put ("build", "[Build] Demo: Robot Class on LambdaTest Grid");
